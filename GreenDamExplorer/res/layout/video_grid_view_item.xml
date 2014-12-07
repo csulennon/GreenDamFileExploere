@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:focusable="false" >
+
+        <com.cmcm.greendamexplorer.view.CMImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:src="@drawable/video_border" />
+
+        <com.cmcm.greendamexplorer.view.CMImageView
+            android:id="@+id/mImageVideoBitmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/mImageVideoOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:background="@drawable/top_selector"
+            android:src="@drawable/play_green" />
+
+        <TextView
+            android:id="@+id/mTvVideoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mImageVideoBitmap"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_green_1"
+            android:layout_alignParentLeft="true"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

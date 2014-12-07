@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/mTvNaviItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:text="SD卡 "
+        android:focusable="false"
+        android:background="@drawable/top_navi_item_selector"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_navi_next" />
+
+</LinearLayout>

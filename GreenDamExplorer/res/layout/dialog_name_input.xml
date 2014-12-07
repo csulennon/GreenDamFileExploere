@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cmcm.greendamexplorer.activity"
+    android:id="@+id/rename_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatTextView
+            android:id="@+id/title_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="15sp"
+            app:fl_fontFamily="roboto_extralight" >
+        </com.cmcm.greendamexplorer.view.flatui.views.FlatTextView>
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatEditText
+            android:id="@+id/mEtOriginalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:hint="原文件名"
+            android:typeface="serif"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatTextView
+            android:id="@+id/title_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="15sp"
+            app:fl_fontFamily="roboto_extralight" >
+        </com.cmcm.greendamexplorer.view.flatui.views.FlatTextView>
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatEditText
+            android:id="@+id/mEtNewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:hint="新文件名"
+            android:typeface="serif"
+            app:fl_fieldStyle="flat"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnDelDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="取消"
+            app:fl_theme="@array/grass" />
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnDelDialogOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="确定"
+            app:fl_textColor="main"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+
+</LinearLayout>

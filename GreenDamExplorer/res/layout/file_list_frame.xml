@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light" >
+
+    <!-- 这个Viewvi需放到第一个 -->
+
+    <com.cmcm.greendamexplorer.view.SwipListView
+        android:id="@+id/fileList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="38dp"
+        android:divider="@color/bg_light"
+        android:dividerHeight="2dp"
+        android:fadingEdge="vertical"
+        android:fastScrollEnabled="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+       	android:layoutAnimation="@anim/file_list_anim_layout"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="none" />
+    
+    <include
+        android:id="@+id/nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/nothing"
+        android:visibility="invisible" />
+
+    <HorizontalScrollView
+        android:id="@+id/mTopNaviScroll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="top"
+        android:background="@drawable/img_top_navi_bg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/mLinearTopNavi"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:paddingLeft="8dp" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.cmcm.greendamexplorer.view.FileListBottomToolBar
+        android:id="@+id/mBottomToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+    </com.cmcm.greendamexplorer.view.FileListBottomToolBar>
+
+    <com.cmcm.greendamexplorer.view.FileListBottomOperatorMenu
+        android:id="@+id/mBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_gravity="bottom" >
+    </com.cmcm.greendamexplorer.view.FileListBottomOperatorMenu>
+
+    <com.cmcm.greendamexplorer.view.CopyBottomChooseBar
+        android:id="@+id/mBottomChooseBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+    </com.cmcm.greendamexplorer.view.CopyBottomChooseBar>
+
+    <com.cmcm.greendamexplorer.view.MoveBottomChooseBar
+        android:id="@+id/mBottomMoveChooseBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+    </com.cmcm.greendamexplorer.view.MoveBottomChooseBar>
+
+</FrameLayout>

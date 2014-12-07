@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/color_green_1" >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/top_selector"
+            android:onClick="back"
+            android:src="@drawable/ab_ic_back_light_pressed" />
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/vertical_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:fastScrollEnabled="true"
+            android:gravity="center_vertical"
+            android:text="这里全是人生"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/mVideoGrideView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="46dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:layoutAnimation="@anim/video_wall_anim_layout"
+        android:verticalSpacing="20dp" >
+    </GridView>
+    
+    <include
+        android:id="@+id/nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        layout="@layout/nothing" />
+
+</RelativeLayout>

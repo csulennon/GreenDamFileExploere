@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+
+    <LinearLayout
+        android:id="@+id/swipelist_backview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_back_selector"
+        android:gravity="center|right" >
+
+        <TextView
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="25sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/swipelist_frontview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_front_selector"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:tag="swipe_front" >
+
+        <LinearLayout
+            android:id="@+id/text_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/mImageFileType"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:focusable="false"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/type_unknow" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/mLayoutTopRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/mLinearFileNameAndPath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/mTvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="middle"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="文件名文件名文件名文件名文件名文件名文件名"
+                            android:textColor="@color/text_color_balck"
+                            android:textSize="@dimen/text_size_larg" />
+
+                        <TextView
+                            android:id="@+id/mTvPath"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:ellipsize="middle"
+                            android:singleLine="true"
+                            android:text="/sdcard/baidu/henchang/fanlielong/haiyaochang/yaochang/文件.txt"
+                            android:textColor="@color/text_color_light_black"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#0000"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:padding="0dp" >
+
+                    <TextView
+                        android:id="@+id/mTvCreateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2014-08-05 19:30"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="@color/text_color_light_black"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/mTvAppName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/mTvCreateTime"
+                        android:text="(备份)"
+                        android:textColor="@color/color_red_1"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/mTvSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="20K"
+                        android:textColor="@color/text_color_light_black"
+                        android:textSize="@dimen/text_size_normal" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/mCbChecke"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cmcm.greendamexplorer.activity"
+    android:id="@+id/mNewFileDialogInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <com.cmcm.greendamexplorer.view.flatui.views.FlatEditText
+        android:id="@+id/mEtNewFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dip"
+        android:hint="新文件名"
+        android:typeface="serif"
+        app:fl_fieldStyle="flat"
+        app:fl_theme="@array/grass" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnNewFileInputDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:text="取消"
+            app:fl_theme="@array/grass" />
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnNewFileInputDialogOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="确定"
+            app:fl_textColor="main"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+
+</LinearLayout>

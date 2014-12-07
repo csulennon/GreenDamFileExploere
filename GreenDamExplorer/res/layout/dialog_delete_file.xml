@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cmcm.greendamexplorer.activity"
+    android:id="@+id/mDelFileDialogRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/mDelDialogProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="2"
+        android:progressDrawable="@drawable/delete_progress_layer" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/mTvDelDialogFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="85dp"
+            android:ellipsize="middle"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="开始扫描"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/mTvDelDialogSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:ellipsize="middle"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text="23.10MB/221.65MB"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/mDelDialogListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnDelDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:text="取消"
+            app:fl_theme="@array/grass" />
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnDelDialogOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="确定"
+            app:fl_textColor="main"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res/com.cmcm.greendamexplorer.activity"
+    android:id="@+id/mlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="#3000" >
+
+    <RelativeLayout
+        android:id="@+id/nemu_head"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" >
+
+        <ImageButton
+            android:id="@+id/mImgBtnHideLeftMenu"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/top_selector"
+            android:src="@drawable/ab_ic_back_light_pressed" />
+
+        <ImageView
+            android:id="@+id/head_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_head" />
+
+        <TextView
+            android:id="@+id/mTvLeftMenuUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head_view"
+            android:layout_centerHorizontal="true"
+            android:text="用户"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nemu_head"
+        android:layout_marginBottom="65dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/line" >
+            </include>
+
+            <LinearLayout
+                android:id="@+id/mLeftMenuGoExternalStorage"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/left_menu_item_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_sdcard" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="外部存储目录"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="90dp"
+                layout="@layout/line" >
+            </include>
+
+            <LinearLayout
+                android:id="@+id/mLeftMenuGoRootDir"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/left_menu_item_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="根目录"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                layout="@layout/line" >
+            </include>
+
+            <LinearLayout
+                android:id="@+id/mLeftMenuGoCategoryPage"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/left_menu_item_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_category" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="文件类别"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                layout="@layout/line" >
+            </include>
+
+            <LinearLayout
+                android:id="@+id/mLeftMenuGoFavoritePage"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/left_menu_item_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_favorite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="收藏夹"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                layout="@layout/line" >
+            </include>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp" >
+
+                <com.cmcm.greendamexplorer.view.flatui.views.FlatToggleButton
+                    android:id="@+id/mToggleBtnShowHideFile"
+                    android:layout_width="80dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:checked="false"
+                    android:text="显示隐藏文件"
+                    flatui:fl_cornerRadius="18dp"
+                    flatui:fl_space="14dp" />
+
+                <TextView
+                    android:id="@+id/my_question_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="显示隐藏文件"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        layout="@layout/line" >
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mLeftMenuExit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            android:src="@drawable/ic_exit" />
+
+        <ImageView
+            android:id="@+id/mLeftMenuAboutme"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            android:src="@drawable/ic_info" />
+
+        <ImageView
+            android:id="@+id/mLeftMenuRefresh"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:src="@drawable/ic_refresh" />
+    </RelativeLayout>
+
+</RelativeLayout>

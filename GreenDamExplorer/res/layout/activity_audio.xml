@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/color_green_1" >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/top_selector"
+            android:onClick="back"
+            android:src="@drawable/ab_ic_back_light_pressed" />
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/vertical_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="你听的不是音乐，是寂寞"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mAudioListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="46dp"
+        android:layoutAnimation="@anim/favorite_list_anim_layout"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp" >
+    </ListView>
+
+    <include
+        android:id="@+id/nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/nothing"
+        android:visibility="invisible" />
+
+</RelativeLayout>

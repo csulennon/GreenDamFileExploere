@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/color_green_1" >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/top_selector"
+            android:onClick="back"
+            android:src="@drawable/ab_ic_back_light_pressed" />
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/vertical_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="所有图片"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/mListViewImageWall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:horizontalSpacing="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:verticalSpacing="2dp"
+        android:numColumns="3"
+        android:layoutAnimation="@anim/picture_wall_anim_layout"
+        android:smoothScrollbar="true" >
+    </GridView>
+
+    <!--
+    <ListView
+        android:layout_marginTop="46dp"
+        android:id="@+id/mListViewImageWall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:smoothScrollbar="true" > 
+    </ListView>
+    -->
+    
+    <include
+        android:id="@+id/nothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/nothing"
+        android:visibility="invisible" />
+
+</RelativeLayout>

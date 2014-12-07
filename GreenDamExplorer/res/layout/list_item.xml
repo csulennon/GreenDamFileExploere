@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.cmcm.greendamexplorer.view.CMImageView
+        android:id="@+id/image01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:background="#f2f2f2"
+        android:clickable="true"
+        android:contentDescription="image01"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_photo" />
+
+    <com.cmcm.greendamexplorer.view.CMImageView
+        android:id="@+id/image02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:contentDescription="image02"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_photo" />
+
+    <com.cmcm.greendamexplorer.view.CMImageView
+        android:id="@+id/image03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:contentDescription="image03"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_photo" />
+
+</LinearLayout>

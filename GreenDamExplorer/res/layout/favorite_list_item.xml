@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/mImageFavorite"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/mImageFavorite" >
+
+            <ImageView
+                android:id="@+id/mImageFaviriteBorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/favorite_border_item_selector"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/mTvFavoriteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="middle"
+                    android:text="收藏项目" />
+                
+                <TextView
+                    android:id="@+id/mTvFavoritePath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:ellipsize="middle"
+                    android:layout_below="@+id/mTvFavoriteName"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="路径" />
+
+                <TextView
+                    android:id="@+id/mTvFavoriteTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="40dp"
+                    android:text="收藏：2014-08-14 12:30" />
+                <TextView
+                    android:id="@+id/mTvFavoriteSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_alignParentBottom="true"
+                    android:text="0b" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/mCbFavorite"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                style="@style/CustomCheckboxTheme"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

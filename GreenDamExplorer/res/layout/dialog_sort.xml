@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cmcm.greendamexplorer.activity"
+    android:id="@+id/mSortDialogRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnSortNameUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="名称升序"
+            app:fl_theme="@array/grass" />
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnSortNameDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="名称降序"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnSortSizeUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="大小升序"
+            app:fl_theme="@array/grass" />
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnSortSizeDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="大小降序"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp" >
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnSortDateUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="时间升序"
+            app:fl_theme="@array/grass" />
+
+        <com.cmcm.greendamexplorer.view.flatui.views.FlatButton
+            android:id="@+id/mBtnSortDateDown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="时间降序"
+            app:fl_theme="@array/grass" />
+    </LinearLayout>
+
+</LinearLayout>

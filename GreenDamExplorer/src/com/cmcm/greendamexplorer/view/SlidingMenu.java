@@ -129,13 +129,17 @@ public class SlidingMenu extends RelativeLayout {
 		float oldScrollX = mSlidingView.getScrollX();
 		switch (action) {
 		case MotionEvent.ACTION_DOWN:
+			// 如果处于侧滑状态则拦截触摸
+			if(mSlidingView.getScrollX() != 0) {
+				return true;
+			}
 			mLastX = x;
 			mLastY = y;
 			mIsBeingDragged = false;
 			break;
 
 		case MotionEvent.ACTION_MOVE:
-			final float dx = x - mLastX;
+			float dx = ev.getX() - mLastX;
 			final float xDiff = Math.abs(dx);
 			final float yDiff = Math.abs(y - mLastY);
 

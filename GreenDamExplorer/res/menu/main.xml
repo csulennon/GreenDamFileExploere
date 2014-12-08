@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.cmcm.greendamexplorer.activity.MainActivity" >
 
-    <item
+    <!-- <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_light"
         android:title="@string/action_settings"
-        app:showAsAction="always"/>
+        app:showAsAction="always"/> -->
 
 
 </menu>

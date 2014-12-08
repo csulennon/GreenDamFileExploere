@@ -6,11 +6,13 @@ import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.cmcm.greendamexplorer.fragment.IOnBackPressed;
 import com.cmcm.greendamexplorer.fragment.LeftMenuFragment;
@@ -24,6 +26,7 @@ public class MainActivity extends FragmentActivity {
     ViewPageFragment mViewPageFragment = null;
     ActionBar mActionBar = null;
     IOnBackPressed mOnBackPressed = null;// 点击回退键触发
+    long[] mHits = new long[2];
 
     @Override
     protected void onCreate(Bundle arg0) {
@@ -125,17 +128,13 @@ public class MainActivity extends FragmentActivity {
                 boolean needExit = mOnBackPressed.onBackPressed();
                 System.out.println(needExit);
                 if (needExit) {
-                    Builder dialog = new AlertDialog.Builder(this);
-                    dialog.setTitle("是否退出？");
-                    dialog.setNegativeButton("不退出", null);
-                    dialog.setPositiveButton("退出", new OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            MainActivity.this.finish();
-                        }
-                    });
-                    dialog.show();
-//                    super.onKeyDown(keyCode, event);
+                	System.arraycopy(mHits, 1, mHits, 0, mHits.length -1);
+                	mHits[mHits.length - 1] = SystemClock.uptimeMillis();
+                	if(mHits[0] > ( SystemClock.uptimeMillis() - 500)) {
+                		MainActivity.this.finish();
+                	} else {
+                		Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+                	}
                 } else {
                     return true;
                 }

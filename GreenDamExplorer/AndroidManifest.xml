@@ -22,8 +22,7 @@
         android:name="com.cmcm.greendamexplorer.core.engine.DeploymentOperation"
         android:allowBackup="true"
         android:icon="@drawable/ic_logo"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:label="@string/app_name" >
         <uses-library android:name="android.test.runner" />
 
         <activity

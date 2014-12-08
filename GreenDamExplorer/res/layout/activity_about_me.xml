@@ -47,53 +47,61 @@
         android:textColor="@color/white" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:text="@string/copyright"
-        android:textSize="12sp"
-        android:layout_marginBottom="30dp"
-        android:gravity="center_horizontal"
-        android:textColor="@color/white" />
-    
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:autoLink="email"
-        android:text="作者邮箱：csulennon@163.com"
-        
-        android:textSize="12sp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center_horizontal"
-        android:textColor="@color/white" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="45sp"
         android:layout_height="50sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView1"
-        android:gravity="center"
-        android:textColor="@color/color_red_1"
         android:layout_marginTop="20dp"
+        android:gravity="center"
         android:text="一款绿色安全的APP"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_red_1" />
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="10dp"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+           
+            android:gravity="center"
+            android:text="github：https://github.com/csulennon/GreenDamFileExploere"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:gravity="center"
+            android:text="作者邮箱：csulennon@163.com"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/copyright"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp" />
+    </LinearLayout>
 
 </RelativeLayout>

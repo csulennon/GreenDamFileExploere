@@ -1,6 +1,7 @@
 package com.cmcm.greendamexplorer.activity;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -100,7 +101,7 @@ public class AudioActivity extends Activity implements OnItemClickListener, OnIt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mAudios = MediaResourceManager.getAudiosFromMedia();
+        mAudios = new ArrayList<Audio>();
         setContentView(R.layout.activity_audio);
         mProgressDialog = UiUtil.createLoadingDialog(this, "正在为您加载音乐...");
         mViewNothing = findViewById(R.id.nothing);

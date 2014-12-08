@@ -9,6 +9,7 @@ GreenDam File Exploere
 ![GreenDamFileExploere1](screen/2014-12-08%2020:56:01.png)
 ![GreenDamFileExploere2](screen/2014-12-08%2020:59:47.png)
 ![GreenDamFileExploere3](screen/2014-12-08%2021:00:31.png)
+![GreenDamFileExploere3](screen/2014-12-08%2020:55:24.png)
 
 你可以在这里下载demo[download](https://raw.github.com/csulennon/GreenDamFileExploere/master/GreenDamExplorer.apk)
 

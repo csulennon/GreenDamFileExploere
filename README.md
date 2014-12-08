@@ -1,4 +1,5 @@
 GreenDam File Exploere
+===============
 绿霸文件管理器
 ===============
 
@@ -13,7 +14,7 @@ GreenDam File Exploere
 
 ![GreenDamFileExploere3](screen/2014-12-08%2021:00:31.png)
 
-![GreenDamFileExploere4](screen/2014-12-08%2020:55:24.png)
+![GreenDamFileExploere4](screen/2014-12-08%2020:55:24 .png)
 
 你可以在这里下载demo[download](https://raw.github.com/csulennon/GreenDamFileExploere/master/GreenDamExplorer.apk)
 
